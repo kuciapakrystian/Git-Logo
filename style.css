@@ -1,0 +1,82 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+.git{
+    height: 150px;
+    width: 150px;
+    background-color: #f06033;
+    border-radius: 15px;
+    position: relative;
+    transform: rotate(45deg);
+}
+.line1{
+    width: 110px;
+    background-color: white;
+    height: 10px;
+    top: 40px;
+    position: absolute;
+}
+.line1::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top: -8px;
+    left: 30px;
+}
+.line1::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top: -8px;
+    left: 90px;
+}
+.line2{
+    width: 90px;
+    background-color: white;
+    height: 12px;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    transform: rotate(45deg);
+}
+.line2::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top: -8px;
+    left: 70px;
+}
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #000;
+	text-align: center;
+  }
+  .footer p {
+  text-decoration: none;
+  color: #fff;
+  }
+  .footer a {
+	text-decoration: none;
+	color: #f06033;
+  }
+  .footer a:hover {
+	text-decoration: underline;
+	color: red;
+  }
